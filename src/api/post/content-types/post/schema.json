@@ -40,11 +40,11 @@
         "images"
       ]
     },
-    "tags": {
+    "tag": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::tag.tag",
-      "mappedBy": "post"
+      "inversedBy": "posts"
     }
   }
 }

@@ -17,11 +17,11 @@
       "required": true,
       "unique": true
     },
-    "post": {
+    "posts": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::post.post",
-      "inversedBy": "tags"
+      "mappedBy": "tag"
     }
   }
 }
